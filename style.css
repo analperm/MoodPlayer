@@ -1,0 +1,127 @@
+#control-view {
+	-fx-alignment: center;
+	-fx-spacing: 15;
+	-fx-padding: 10,20;
+}
+
+#header {
+	-fx-alignment: center;
+	-fx-spacing: 10;
+	-fx-padding: 10;
+	-fx-background-color: rgba(255,0,0,0.05);
+}
+
+#header-text {
+	-fx-alignment: center;
+	-fx-spacing: 10;
+	-fx-padding: 10;
+}
+
+.main-text {
+	-fx-font-size: 22;
+	-fx-font-family: Helvetica;
+	-fx-text-fill: rgba(100, 100, 100, 0.8);
+	-fx-font-style: normal;
+	-fx-font-weight: bold;
+}
+
+.text-2 {
+	-fx-font-size: 12;
+	-fx-font-family: Helvetica;
+	-fx-text-fill: rgba(100, 100, 100, 0.8);
+	-fx-font-style: normal;
+}
+
+.text-1 {
+	-fx-font-size: 12;
+	-fx-font-family: Helvetica;
+	-fx-text-fill: rgba(100, 100, 100, 0.8);
+	-fx-font-style: normal;
+	-fx-font-weight: bold;
+}
+
+.icon-button {
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-size: 28 28;
+    -fx-background-position: center;
+}
+
+.bottomBox {
+	-fx-background-color: rgba(255,0,0,0.05);
+}
+
+/* Play/Pause */
+#play-button.play {
+    -fx-background-image: url("/assets/play-circle.png");
+}
+
+#play-button:hover.play {
+    -fx-background-image: url("/assets/play-circle.png");
+}
+
+#play-button.pause {
+    -fx-background-image: url("/assets/pause-circle.png");
+}
+
+#play-button:hover.pause {
+    -fx-background-image: url("/assets/pause-circle.png");
+}
+
+/* Skip vor/zurück */
+#skip-button {
+    -fx-background-image: url("/assets/skip-next.png");
+}
+
+#skipback-button {
+    -fx-background-image: url("/assets/skip-previous.png");
+}
+
+/* Shuffle */
+#shuffel-button.shuffle-disabled {
+    -fx-background-image: url("/assets/shuffle-disabled.png");
+}
+
+#shuffel-button.shuffle {
+    -fx-background-image: url("/assets/shuffle-variant.png");
+}
+
+/* ===== PlaylistView – Text schwarz ===== */
+
+/* ListView-Einträge */
+.list-view .list-cell {
+    -fx-text-fill: black;
+}
+
+/* Ausgewählter Eintrag */
+.list-view .list-cell:selected {
+    -fx-text-fill: black;
+}
+
+/* Status-Label unter der Playlist */
+#statusLabel {
+    -fx-text-fill: black;
+}
+
+/* Mini-Track-Info über den Buttons */
+#mini-info-box Label {
+    -fx-text-fill: black;
+}
+
+#mini-info-box {
+    -fx-background-color: rgba(255,255,255,0.05);
+}
+
+.mini-track-title {
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.mini-track-artist {
+	-fx-text-fill: black;
+    -fx-text-fill: rgba(255,255,255,0.7);
+    -fx-font-size: 12px;
+}
